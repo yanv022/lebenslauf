@@ -4,258 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lebenslauf - Yann Abel Ndemmeze Vougue</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="https://cdn4.vectorstock.com/i/1000x1000/94/03/blue-resume-icon-isolated-on-white-background-cv-vector-35349403.jpg" type="image/x-icon">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f5f7;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 20px;
-            border-radius: 8px 8px 0 0;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        header img {
-            border-radius: 50%;
-            width: 90px;
-            height: 90px;
-            border: 3px solid #fff;
-        }
-        header div {
-            flex-grow: 1;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: 700;
-        }
-        header p {
-            margin: 4px 0;
-        }
-        h2 {
-            font-size: 22px;
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-        .section {
-            padding: 20px 0;
-        }
-        .section:nth-child(even) {
-            background: #f9fafc;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        li::before {
-            content: '•';
-            color: #003366;
-            margin-right: 8px;
-        }
-        a {
-            color: #003366;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 12px;
-            color: #666;
-            background-color: #f4f5f7;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="bild.jpeg" alt="Profilbild von Yann Abel Ndemmeze Vougue">
-            <div>
+        <header class="fade-in">
+            <div class="profile-image">
+                <img src="bild.jpeg" alt="Profilbild von Yann Abel Ndemmeze Vougue">
+            </div>
+            <div class="header-content">
                 <h1>Yann Abel Ndemmeze Vougue</h1>
-                <p>Softwareentwickler | BI-Entwickler</p>
-                <p>Email: yanndelavv@gmail.com | Tel: +4917643837200</p>
+                <p class="title">Softwareentwickler | BI-Entwickler</p>
+                <div class="contact-info">
+                    <a href="mailto:yanndelavv@gmail.com"><i class="fas fa-envelope"></i> yanndelavv@gmail.com</a>
+                    <a href="tel:+4917643837200"><i class="fas fa-phone"></i> +49 176 4383 7200</a>
+                </div>
             </div>
         </header>
 
-        <div class="section">
-           <h2>Profil</h2>
-			<p>Als engagierter und zuverlässiger Softwareentwickler mit fundierten Kenntnissen in der Entwicklung moderner Anwendungen mittels Angular, Node.js 
-				und Java, habe ich mehrere Projekte nach dem Scrum-Modell erfolgreich zum Abschluss gebracht. Meine technische Expertise umfasst fortgeschrittene Kenntnisse in Continuous Integration 
-				und Continuous Deployment mit GitLab CI/CD, sowie in der Containerisierung mit Docker. Darüber hinaus bin ich versiert im Einsatz 
-				von Monitoring- und Qualitätsmanagement-Tools wie SonarQube, Grafana und Prometheus, um die Performance und Sicherheit von Anwendungen auf ein Ubutu Server zu gewährleisten.
-			</p>
-			<p>
-				Parallel dazu habe ich als Business Intelligence Entwickler bei der Deka Bank über zwei Jahre hinweg tiefgreifende analytische Fähigkeiten entwickelt. 
-				Dort war ich verantwortlich für die Erstellung aussagekräftiger Reports unter Verwendung von SAP Crystal Reports, Jaspersoft und Oracle. 
-				Diese Tätigkeit hat mein Verständnis für datengestützte Entscheidungsprozesse geschärft und meine Kompetenz in der Datenanalyse gefestigt.
+        <main>
+            <section class="section profile-section slide-in">
+                <h2><i class="fas fa-user"></i> Profil</h2>
+                <div class="content">
+                    <p class="profile-text">Als engagierter und zuverlässiger Softwareentwickler mit fundierten Kenntnissen in der Entwicklung moderner Anwendungen mittels Angular, Node.js und Java, habe ich mehrere Projekte nach dem Scrum-Modell erfolgreich zum Abschluss gebracht. Meine technische Expertise umfasst fortgeschrittene Kenntnisse in Continuous Integration und Continuous Deployment mit GitLab CI/CD, sowie in der Containerisierung mit Docker. Darüber hinaus bin ich versiert im Einsatz von Monitoring- und Qualitätsmanagement-Tools wie SonarQube, Grafana und Prometheus, um die Performance und Sicherheit von Anwendungen auf ein Ubuntu Server zu gewährleisten.</p>
+                    <p class="profile-text">Parallel dazu habe ich als Business Intelligence Entwickler bei der Deka Bank über zwei Jahre hinweg tiefgreifende analytische Fähigkeiten entwickelt. Dort war ich verantwortlich für die Erstellung aussagekräftiger Reports unter Verwendung von SAP Crystal Reports, Jaspersoft und Oracle. Diese Tätigkeit hat mein Verständnis für datengestützte Entscheidungsprozesse geschärft und meine Kompetenz in der Datenanalyse gefestigt.</p>
+                    <div class="career-goal">
+                        <h3>Karriereziel</h3>
+                        <p>Aktuell suche ich eine Position, in der ich meine Fähigkeiten in der Softwareentwicklung und/oder Business Intelligence weiterentwickeln und effektiv einsetzen kann. Ich bin besonders interessiert an Rollen, die sowohl technische Herausforderungen als auch Möglichkeiten zur strategischen Datenanalyse bieten.</p>
+                    </div>
+                </div>
+            </section>
 
-			</p>
-			<h4>Karriereziel</h4>
-			<p>
-				Aktuell suche ich eine Position, in der ich meine Fähigkeiten in der Softwareentwicklung und/oder Business Intelligence weiterentwickeln und effektiv einsetzen kann. 
-				Ich bin besonders interessiert an Rollen, die sowohl technische Herausforderungen als auch Möglichkeiten zur strategischen Datenanalyse bieten. 
-			</p>
-             </div>
+            <section class="section skills-section slide-in">
+                <h2><i class="fas fa-code"></i> Kompetenzen</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programmierung</h3>
+                        <ul class="skill-list">
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>TypeScript</li>
+                            <li>HTML/CSS</li>
+                            <li>XML</li>
+                            <li>Angular</li>
+                            <li>Ionic</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Datenbanken & BI</h3>
+                        <ul class="skill-list">
+                            <li>SQL/PLSQL</li>
+                            <li>Oracle</li>
+                            <li>PostgreSQL</li>
+                            <li>SAP Crystal Reports</li>
+                            <li>JasperReports</li>
+                            <li>SAP S4HANA</li>
+                            <li>Power BI</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Tools</h3>
+                        <ul class="skill-list">
+                            <li>Docker</li>
+                            <li>CI/CD</li>
+                            <li>Grafana</li>
+                            <li>Prometheus</li>
+                            <li>SonarQube</li>
+                            <li>Git</li>
+                            <li>VS Code, IntelliJ, Webstorm</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-        <div class="section">
-            <h2>Kompetenzen</h2>
-            <ul>
-				<li>Programmiersprachen (Java, C, TypeScript, HTML, CSS, XML)</li>
-                <li>Frameworks (Angular, Ionic)</li>
-				<li>SQL, PLSQL, Oracle, Posgresql</li>
-                <li>DevOps und Servermanagement</li>
-				<li>Docker, CI/CD, Grafana | Prometheus</li>
-				<li>IDE: Visual Studio Code, IntelliJ, webstorm, eclipse</li>
-				<li>MS Office 365</li>
-				<li>CMS: WordPress, TYPO3, Strapi</li>
-				<li>Skriptsprachen: Bash</li>
-				<li>Softwaretesting: JUnit, SonarQube, ngtest mit jasmine und klarna</li>
-				<li>reporting und business intelligence: SAP Crystal Reports, JasperReports, SAP S4HANA,SAP Analysis, Power BI</li>
-            </ul>
-        </div>
+            <section class="section experience-section slide-in">
+                <h2><i class="fas fa-briefcase"></i> Berufserfahrung</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">12.2024 - aktuell</div>
+                        <div class="timeline-content">
+                            <h3>Nicht beschäftigt</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">08.2022 - 11.2024</div>
+                        <div class="timeline-content">
+                            <h3>Deka-Bank, Frankfurt</h3>
+                            <p>Business Intelligence Entwickler</p>
+                            <ul>
+                                <li>Erstellung und Optimierung von SQL-basierten Reports mit SAP Crystal Reports</li>
+                                <li>Dokumentation und Test von Reports</li>
+                                <li>Performance-Optimierung für PostgreSQL-Datenbanken</li>
+                                <li>Unterstützung bei Softwaretests und Rollouts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">05.2020 - 07.2022</div>
+                        <div class="timeline-content">
+                            <h3>Ancla GmbH</h3>
+                            <p>Logistik, Produktbewertung und Bestandszählung</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">03.2020 - 05.2020</div>
+                        <div class="timeline-content">
+                            <h3>Selbstständig</h3>
+                            <p>Nachhilfe in objektorientierter Programmierung (OOP)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="section">
-            <h2>Berufserfahrung</h2>
-            <p><strong>Nicht beschäftigt</strong> (Dez 2024 – aktuell)</p>
-            <p><strong>Deka-Bank, Frankfurt</strong> (Aug 2022 – Nov 2024)</p>
-            <ul>
-                <li>Erstellung und Optimierung von SQL-basierten Reports mit SAP Crystal Reports</li>
-                <li>Dokumentation und Test von Reports</li>
-                <li>Performance-Optimierung für PostgreSQL-Datenbanken</li>
-                <li>Unterstützung bei Softwaretests und Rollouts</li>
-            </ul>
-            <p><strong>Ancla GmbH</strong> (Mai 2020 – Jul 2022)</p>
-            <ul>
-                <li>Logistik, Produktbewertung und Bestandszählung</li>
-            </ul>
-            <p><strong>Selbstständig</strong> (März 2020 – Mai 2020)</p>
-            <ul>
-                <li>Nachhilfe in objektorientierter Programmierung (OOP)</li>
-            </ul>
-        </div>
+            <section class="section education-section slide-in">
+                <h2><i class="fas fa-graduation-cap"></i> Ausbildung</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">09.2019 - aktuell</div>
+                        <div class="timeline-content">
+                            <h3>THM Gießen</h3>
+                            <p>Bachelor in Informatik</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">04.2019 - 07.2019</div>
+                        <div class="timeline-content">
+                            <h3>Hochschule Fulda</h3>
+                            <p>DSH Sprachkurs</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">09.2017 - 11.2018</div>
+                        <div class="timeline-content">
+                            <h3>Institut der Erfolg, Kamerun</h3>
+                            <p>Sprachkurs A1–B2</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">09.2009 - 08.2017</div>
+                        <div class="timeline-content">
+                            <h3>Lycée bilingue de Mbandjock, Kamerun</h3>
+                            <p>Abitur</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="section">
-            <h2>Ausbildung</h2>
-            <ul>
-                <li><strong>Bachelor in Informatik</strong>, THM Gießen (Sep 2019 – aktuell)</li>
-                <li><strong>DSH Sprachkurs</strong>, Hochschule Fulda (Apr 2019 – Jul 2019)</li>
-                <li><strong>Sprachkurs A1–B2</strong>,Institut der Erfolg, Kamerun (Sep 2017 – Nov 2018)</li>
-                <li><strong>Abitur</strong>, Lycée bilingue de Mbandjock, Kamerun (Sep 2009 – Aug 2017)</li>
-            </ul>
-        </div>
+            <section class="section projects-section slide-in">
+                <h2><i class="fas fa-project-diagram"></i> Projekte</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h3>Softwaretechnik-Projekt</h3>
+                        <ul>
+                            <li>Entwicklung der Dashboard von <a href="https://frag.jetzt" target="_blank">frag.jetzt</a></li>
+                            <li>Angular</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Konzepte Systemnaher Programmierung</h3>
+                        <ul>
+                            <li>Entwicklung einer NINJA Virtual Machine (Stack Verarbeitung: LIFO)</li>
+                            <li>Technologie: C als Programmiersprache</li>
+                            <li>Rechenobjekte auf dem Heap</li>
+                            <li>Konzeption und Implementierung eines Debuggers</li>
+                            <li>Speicherverwaltung mit Garbage Collection</li>
+                            <li>Mehr auf: <a href="https://git.thm.de/yanv02/ksp-ninja-machine-s/-/blob/master/README.md" target="_blank">git</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Programmierung interaktiver Systeme</h3>
+                        <ul>
+                            <li>Entwicklung einer verteilten Datei-Transfer-Anwendung</li>
+                            <li>Technologie: threadsichere Java Socket IO mit Swing als GUI</li>
+                            <li>Mehr auf: <a href="https://git.thm.de/yanv02/pishausubung2" target="_blank">git</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Android Multiple-Choice-Trainer App</h3>
+                        <ul>
+                            <li>Unterstützt den Benutzer in verschiedenen Lernbereichen</li>
+                            <li>Technologien: Ionic Framework mit Angular und PocketBase als Backend</li>
+                            <li>Mehr auf: <a href="https://git.thm.de/ema-praktikum/ss2023/mc-trainer" target="_blank">git</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>DevOps</h3>
+                        <ul>
+                            <li>Entwicklung einer Angular-Chat-App mit Monitoring (Grafana | Prometheus)</li>
+                            <li>Continous Integration und skalierte DevOps Pipeline</li>
+                            <li>Automatisierte Tests mit SonarQube</li>
+                            <li>Continous Delivery und Deployment</li>
+                            <li>Einführung in die Serveradministration (Ubuntu)</li>
+                            <li>Einführung in Virtualisierung und Containerisierung mit Docker</li>
+                            <li>Mehr auf: <a href="https://git.thm.de/rcdt32/devops_hue2" target="_blank">git</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-        <div class="section">
-    <h2>Projekte</h2>
-    <ul>
-        <li>
-            <strong>Softwaretechnik-Projekt:</strong>
-            <ul style="list-style-type: circle; margin-left: 20px;">
-                <li>Entwicklung der Dashboard von <a href="https://frag.jetzt">frag.jetzt</a></li>
-                <li>Angular</li>
-            </ul>
-        </li>
-        <br>
-        <li>
-            <strong>Konzepte Systemnaher Programmierung:</strong>
-            <ul style="list-style-type: circle; margin-left: 20px;">
-                <li>Entwicklung einer NINJA Virtual Machine (Stack Verarbeitung: LIFO)</li>
-                <li>Technologie: C als Programmiersprache</li>
-                <li>Rechenobjekte auf dem Heap</li>
-                <li>Konzeption und Implementierung eines Debuggers</li>
-                <li>Speicherverwaltung mit Garbage Collection</li>
-                <li>Mehr auf: <a href="https://git.thm.de/yanv02/ksp-ninja-machine-s/-/blob/master/README.md">git</a></li>
-            </ul>
-        </li>
-        <br>
-        <li>
-            <strong>Programmierung interaktiver Systeme:</strong>
-            <ul style="list-style-type: circle; margin-left: 20px;">
-                <li>Entwicklung einer verteilten Datei-Transfer-Anwendung</li>
-                <li>Technologie: threadsichere Java Socket IO mit Swing als GUI</li>
-                <li>Mehr auf: <a href="https://git.thm.de/yanv02/pishausubung2">git</a></li>
-            </ul>
-        </li>
-        <br>
-        <li>
-            <strong>Android Multiple-Choice-Trainer App:</strong>
-            <ul style="list-style-type: circle; margin-left: 20px;">
-                <li>Unterstützt den Benutzer in verschiedenen Lernbereichen</li>
-                <li>Technologien: Ionic Framework mit Angular und PocketBase als Backend</li>
-                <li>Mehr auf: <a href="https://git.thm.de/ema-praktikum/ss2023/mc-trainer">git</a></li>
-            </ul>
-        </li>
-        <br>
-        <li>
-            <strong>DevOps:</strong>
-            <ul style="list-style-type: circle; margin-left: 20px;">
-                <li>Entwicklung einer Angular-Chat-App mit Monitoring (Grafana | Prometheus)</li>
-                <li>Continous Integration und skalierte DevOps Pipeline</li>
-                <li>Automatisierte Tests mit SonarQube</li>
-                <li>Continous Delivery und Deployment</li>
-                <li>Einführung in die Serveradministration (Ubuntu)</li>
-                <li>Einführung in Virtualisierung und Containerisierung mit Docker</li>
-                <li>Mehr auf: <a href="https://git.thm.de/rcdt32/devops_hue2">git</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
+            <section class="section social-skills-section slide-in">
+                <h2><i class="fas fa-users"></i> Soziale Kompetenzen</h2>
+                <ul class="social-skills-list">
+                    <li>Ausgeprägte Teamfähigkeit</li>
+                    <li>Empathie</li>
+                    <li>Toleranz</li>
+                </ul>
+            </section>
 
+            <section class="section languages-section slide-in">
+                <h2><i class="fas fa-language"></i> Sprachen</h2>
+                <ul class="languages-list">
+                    <li>Französisch: Muttersprache</li>
+                    <li>Deutsch: Fließend (C1)</li>
+                    <li>Englisch: Gute Kenntnisse</li>
+                </ul>
+            </section>
 
-        <div class="section">
-            <h2>Soziale Kompetenzen</h2>
-            <ul>
-                <li>Ausgeprägte Teamfähigkeit</li>
-                <li>Empathie</li>
-                <li>Toleranz</li>
-            </ul>
-        </div>
+            <section class="section interests-section slide-in">
+                <h2><i class="fas fa-heart"></i> Interessen</h2>
+                <ul class="interests-list">
+                    <li>Fußball spielen</li>
+                    <li>Lesen</li>
+                    <li>Musik hören</li>
+                </ul>
+            </section>
+        </main>
 
-        <div class="section">
-            <h2>Sprachen</h2>
-            <ul>
-                <li>Französisch: Muttersprache</li>
-                <li>Deutsch: Fließend (C1)</li>
-                <li>Englisch: Gute Kenntnisse</li>
-            </ul>
-        </div>
-
-        <div class="section last">
-            <h2>Interessen</h2>
-            <ul>
-                <li>Fußball spielen</li>
-                <li>Lesen</li>
-                <li>Musik hören</li>
-            </ul>
-        </div>
-
-        <div class="footer">
-            © 2024 Yann Abel Ndemmeze Vougue. Alle Rechte vorbehalten.
-        </div>
+        <footer class="footer fade-in">
+            <p>© 2024 Yann Abel Ndemmeze Vougue. Alle Rechte vorbehalten.</p>
+        </footer>
     </div>
+    <script src="js/animations.js"></script>
 </body>
 </html>
